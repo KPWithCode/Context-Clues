@@ -14,8 +14,8 @@ $(document).ready(function () {
 
     function getAlert(i) {
         var pickFriend = friends[i % 5]
-        var pickLocation = locations[i % 5]
-        var pickWeapon = weapons[i % 5]
+        var pickLocation = locations[i % 10]
+        var pickWeapon = weapons[i % 20]
 
         function alertLoop() {
             alert("Accusation" + i + " : I accuse " + pickFriend + " with the " + pickWeapon + " in " + pickLocation + " ! ")
