@@ -6,7 +6,7 @@ $(document).ready(function()    {
         for (var i = 1; i<=100;i++) {
             var h3 = $('<h3>Accusation' + i + '</h3>' )
             $('body').append(h3)
-            
+            $(h3).click(getAlert(i))
         }
             
 function  getAlert (i)   {
@@ -15,7 +15,7 @@ function  getAlert (i)   {
     var pickWeapon = weapons[i % 5]
 
     function alertLoop()    {
-        alert("Accusation" + i +  " : I accuse " + friend + "with the " + weapon + "in" + location + "!")
+        alert("Accusation" + i +  " : I accuse " + pickFriend + " with the " + pickWeapon + " in " + pickLocation + " ! ")
     }
 
     return alertLoop
